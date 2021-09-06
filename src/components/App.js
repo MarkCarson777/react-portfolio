@@ -1,18 +1,13 @@
 import React from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 // is Route component necessary?
 // import Route from './Route';
-import NavBar from './NavBar';
+import Homepage from './Homepage';
 import Profile from './Profile'
 import Employment from './Employment';
-import { BrowserRouter, Route } from 'react-router-dom';
-
-const Homepage = () => {
-  return (
-    <div>
-      <NavBar />
-    </div>
-  )
-}
+import Education from './Education';
+import Contact from './Contact';
+import Destiny from './Destiny';
 
 const App = () => {
   return (
@@ -21,6 +16,9 @@ const App = () => {
         <Route path="/" exact component={Homepage} />
         <Route path="/profile" exact component={Profile} />
         <Route path="/employment" exact component={Employment} />
+        <Route path="/education" exact component={Education} />
+        <Route path="/contact" exact component={Contact} />
+        <Route path="/destiny" exact component={Destiny} />
       </BrowserRouter>
     </div>
   );
