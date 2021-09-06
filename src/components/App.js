@@ -2,6 +2,7 @@ import React from 'react';
 // is Route component necessary?
 // import Route from './Route';
 import NavBar from './NavBar';
+import Profile from './Profile'
 import { BrowserRouter, Route } from 'react-router-dom';
 
 const Homepage = () => {
@@ -17,6 +18,7 @@ const App = () => {
     <div>
       <BrowserRouter basename="/react-portfolio">
         <Route path="/" exact component={Homepage} />
+        <Route path="/profile" exact component={Profile} />
       </BrowserRouter>
     </div>
   );

@@ -8,19 +8,19 @@ const NavBar = () => {
       <Link href="/" className="link">
         Neon Grenade
       </Link>
-      <Link href="#" className="link">
+      <Link href="/profile" className="link">
         Profile
       </Link>
-      <Link href="#" className="link">
-        Work Experience
+      <Link href="/employment" className="link">
+        Employment History
       </Link>
-      <Link href="#" className="link">
+      <Link href="/education" className="link">
         Education History
       </Link>
-      <Link href="#" className="link">
+      <Link href="/contact" className="link">
         Contact
       </Link>
-      <Link href="#" className="link">
+      <Link href="/destiny" className="link">
         Destiny 2
       </Link>
     </div>
