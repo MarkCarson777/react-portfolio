@@ -1,0 +1,9 @@
+.link {
+  text-decoration: none;
+}
+
+.navigation {
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+}
