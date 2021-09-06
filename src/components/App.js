@@ -1,5 +1,6 @@
 import React from 'react';
-import Route from './Route';
+// is Route component necessary?
+// import Route from './Route';
 import NavBar from './NavBar';
 import { BrowserRouter, Route } from 'react-router-dom';
 

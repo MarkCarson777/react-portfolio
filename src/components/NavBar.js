@@ -1,9 +1,10 @@
 import React from 'react';
 import Link from './Link';
+import './component-css/NavBar.css';
 
 const NavBar = () => {
   return (
-    <div>
+    <div className="navigation">
       <Link href="/">
         Neon Grenade
       </Link>
