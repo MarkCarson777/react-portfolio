@@ -4,7 +4,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 const Homepage = () => {
   return (
     <div>
-      <h2>React Portfolio</h2>
+      <h2>Neon Grenade</h2>
     </div>
   )
 }
