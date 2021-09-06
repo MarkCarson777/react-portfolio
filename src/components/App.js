@@ -1,4 +1,5 @@
 import React from 'react';
+import Route from './Route';
 import NavBar from './NavBar';
 import { BrowserRouter, Route } from 'react-router-dom';
 
