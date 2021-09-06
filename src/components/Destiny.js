@@ -1,13 +1,25 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { fetchData } from './actions';
 import NavBar from './NavBar';
 
-const Destiny = () => {
-  return (
-    <div>
-      <NavBar />
-      <h2>Destiny</h2>
-    </div>
-  );
-};
+class Destiny extends React.Component {
+  componentDidMount() {
+    this.props.fetchData();
+  }
 
-export default Destiny;
+  render () {
+    return (
+      <div>
+        <NavBar />
+        {/* {this.fetchData()} */}
+      </div>
+    );
+  }
+}
+
+const mapStateToProps = (state) => {
+  return { users: state };
+}
+
+export default connect(mapStateToProps, { fetchData })(Destiny);
