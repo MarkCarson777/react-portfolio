@@ -12,7 +12,7 @@ import Destiny from './Destiny';
 const App = () => {
   return (
     <div>
-      <BrowserRouter basename="/react-portfolio">
+      <BrowserRouter>
         <Route path="/" exact component={Homepage} />
         <Route path="/profile" exact component={Profile} />
         <Route path="/employment" exact component={Employment} />
